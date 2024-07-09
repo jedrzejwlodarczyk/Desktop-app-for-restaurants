@@ -1,0 +1,28 @@
+/* @import nie jest obsługiwany w JavaFX CSS, należy umieścić lokalnie w katalogu resources, jeśli chcesz użyć fontów z Google Fonts */
+
+.btn {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: normal; /* w JavaFX brak wagi 0, używamy 'normal' */
+    -fx-font-size: 14px;
+    -fx-text-fill: black; /* odpowiednik color w JavaFX */
+    /*-fx-background-color: linear-gradient(90deg, #83868a 0%, #9b989c 100%);*/
+    -fx-padding: 10px 30px;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow( gaussian , rgba(0, 0, 0, 0) , 0, 0 , 0 , 0 ); /* odpowiednik box-shadow */
+    -fx-background-radius: 10px;
+    -fx-transition: all 1000ms;
+    -fx-translate-y: 0;
+    -fx-alignment: center; /* Używamy VBox lub HBox do układania dzieci */
+    -fx-cursor: hand; /* odpowiednik cursor: pointer */
+    -fx-text-transform: lowercase; /* JavaFX nie obsługuje text-transform, musimy ustawić tekst w kodzie Java */
+}
+
+.btn:hover {
+    -fx-text-fill: #0066cc;
+    -fx-border-color: #000000;
+}
+
+.rounded{
+    -fx-background-radius: 10px;
+}
